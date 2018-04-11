@@ -1,6 +1,6 @@
 <?php 
 $con = mysqli_connect("","","","");
-
+//Url we want to scrape
 $url = file_get_contents('https://www.dba.dk/boliger/andelsbolig/andelslejligheder/vaerelser-3/?vaerelser=4&vaerelser=6&boligarealkvm=(75-)&maanedligydelse=(5001-7000)&maanedligydelse=(3001-5000)&maanedligydelse=(1000-3000)&fra=privat&sort=listingdate-desc&pris=(0-2300000)&soegfra=1366&radius=4&long=12-5503&lat=55-6659');
 
 $regexp = "<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>(.*)<\/a>";
